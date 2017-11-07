@@ -65,6 +65,13 @@
     margin-top: 20px;
 }
 
+.program{
+    width: 100%;
+    margin-top: 20px;
+    height: 250px;
+}
+
+
 .program_name{
     width: 100%;
     height: 100px;
@@ -76,6 +83,17 @@
     height: 80px;
     padding-bottom: 15px;
     font-size: 12pt;
+}
+
+.program_Description {
+    padding-left: 20px;
+    float: left;
+    height: 200px;
+    width: 600px;
+}
+
+.donate {
+    float: right;
 }
 
 .colorBar{
