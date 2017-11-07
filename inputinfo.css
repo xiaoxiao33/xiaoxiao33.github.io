@@ -1,0 +1,138 @@
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header_bar{
+    height: 35px;
+    margin-top: 10px;
+    background-color: #be3948;
+
+}
+
+.title {
+    font-size: 14px;
+    padding-top: 8px;
+    padding-left: 25px;
+    font-weight: normal;
+    color: #FFFFFF;
+}
+
+.nav{
+    height: 80px;
+    background: #FFFFFF;
+}
+
+.nav_left{
+    width: 200px;
+    float: left;
+}
+
+.nav_left img {
+    width: 180px;
+    height: 80px;
+}
+
+
+.nav_right li{
+    list-style-type: none;
+    float: left;
+    line-height: 80px;
+    width: 100px;
+    text-align: center;
+    width: 200px;
+}
+.nav_right li a{
+    display: block;
+    font-size: 20px;
+    font-family: Georgia, serif;
+}
+
+.nav_right a:link,.nav_right a:visited{
+    color: #000000;
+    background-color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav_right a:hover,.nav_right a:active{
+    color: #FFFFFF;
+    background-color: #be3948;
+}
+
+
+.program_overview{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.program_name{
+    width: 100%;
+    height: 100px;
+    font-size: 20pt;
+}
+
+.program_detail{
+    width: 100%;
+    height: 80px;
+    padding-bottom: 15px;
+    font-size: 12pt;
+}
+
+.colorBar{
+    height: 35px;
+    overflow: hidden;
+    background-color: #be3948;
+    margin-bottom: 10px;
+}
+
+.info_section{
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.info_section_header{
+    font-size: 16pt;    
+    margin: 10px 0px;
+}
+
+.user_name{
+    display: inline-block;
+    height: 30px;
+    width: 48%;
+    padding: 0;
+    margin: 0;
+}
+
+.user_name_line{
+    width: 40%;
+}
+.user_info_line_wrapper{
+    height: 30px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.user_address_line{
+    width: 50%;
+}
+
+.user_addr_inline{
+    display: inline-block;
+    height: 30px;
+    width: 48%;
+    padding: 0;
+    margin: 0;
+}
+
+.user_city_province_line{
+    width: 40%;
+}
+
+.user_contact_line{
+    width: 50%;
+}
+.submit_button{
+    text-align: center;
+}

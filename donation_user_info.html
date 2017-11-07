@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Personal Info</title>
+    <link rel="stylesheet" type="text/css" href="inputinfo.css"/>
+</head>
+<body>
+    <div class="wrap">
+      <div class="nav">
+        <div class="nav_left">
+            <img src="http://moneymag.com.au/wp-content/uploads/2015/12/family-money-charity.jpg" alt="Charity Logo">
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Your Account</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header_bar"><div class="title">Donation Program Overview</div></div>
+    <div class="program_overview">
+        <div class="program_detail">
+            This is just a fake paragraph of program details. The donation amount cannot be less than 50 and you should pay it in cash:)
+        </div>
+    </div>
+    
+    
+    <div class="info_section">
+
+        <div class=info_section_header>
+            <div class="colorBar"><div class="title">Your Information</div></div>
+            <button id="use_saved_info">use saved info</button>
+        </div>
+        <form action="/action_page.php" method="post">
+            <div>
+                <div class="user_name">First name: <input class="user_name_line" type="text" name="first_name" value=""></div>
+                <div class="user_name">Last name: <input class="user_name_line" type="text" name="last_name" value=""></div>
+            </div>
+            <div>
+                <div class="user_info_line_wrapper">Address Line 1: <input class="user_address_line"type="text" name="address_line_1" value=""></div>
+
+                <div class="user_info_line_wrapper">Address Line 2: <input class="user_address_line" type="text" name="address_line_2" value=""></div>
+
+                <div class="user_info_line_wrapper">
+                    <div class="user_addr_inline">City: <input class="user_city_province_line" type="text" name="city" value=""></div>
+                    <div class="user_addr_inline">State/Province: <input class="user_city_province_line" type="text" name="state" value=""></div>
+                </div>
+                <div class="user_info_line_wrapper">
+                    <div class="user_addr_inline">Country: <input type="text" name="country" value=""></div>
+                    <div class="user_addr_inline">Zip: <input type="text" name="zip" value=""></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="user_info_line_wrapper">
+                    Email: <input class="user_contact_line" type="text" name="email" value="">
+                </div>
+                <div class="user_info_line_wrapper">
+                    Mobile: <input class="user_contact_line" type="text" name="FirstName" value="">
+                </div>
+            </div>
+        
+            <div class="colorBar"><div class="title">Payment Information</div></div>
+            <div class="payment_selection">
+                <div class="user_info_line_wrapper">
+                    Credit Card Number: <input type="text" name="card_number" value="xxxx-xxxx-xxxx-xxxx">
+                </div>
+                <div class="user_info_line_wrapper">
+                    Expiration Month: <input type="text" name="card_expiration" value="mm/yy">
+                </div>
+            </div>
+
+            <div class="submit_button">
+              <button type="submit">Continue</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

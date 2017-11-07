@@ -1,0 +1,81 @@
+
+body {
+	
+}
+
+
+#screen {
+	background-color: white;
+}
+
+.head-bar {
+	width:1264px;
+	height:70px;
+	font-weight: bold;
+	
+	background-color: #186632;
+	font-size:50px; 
+	text-align: center;
+	color: white;
+	font-family: "Times New Roman", Times, serif;
+}
+.program-body {
+	width: 1264px;
+	height: 200px;
+	background-color: orange;
+	text-align: left;
+	color:white;
+	float:center;
+	padding-bottom: 20px;
+}
+.more-details{
+	width:250px;
+	height:20px;
+	border:10px;
+	float:right;
+	font-size: 20px;
+	background-color: transparent;
+}
+
+.program-title{
+	width:500px;
+	height:50px;
+	margin-left: 10px;
+	padding-left: 20px;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px;
+	color:black;
+	background-color: transparent;
+	float:left;
+}
+.program-description{
+	width:900px;
+	height:100px;
+	margin-left: 10px;
+	padding-left: 20px;
+	font-size: 20px;
+	color:black;
+	float:left;
+	background-color: transparent;
+}
+
+#bottom-bar{
+	width:1264px;
+	height:70px;
+	background-color: transparent;
+}
+
+.bottom-button{
+	width:270px;
+	height:60px;
+	background-color: gray; /* Green */
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   
+}
