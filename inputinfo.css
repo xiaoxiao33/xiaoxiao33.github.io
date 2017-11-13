@@ -94,7 +94,25 @@
 
 .donate {
     float: right;
+    display: block;
+    background-color: #ffcccc;
+    color: #ffcccc;
+    text-decoration: none;
+    font-family: "LinotypeUniversW01-Regu",Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
+    width: 84px;
+    text-align: center;
+    line-height: 27px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    -webkit-borderradius: 6px;
+    -moz-border-radius: 5px;
+    border-radius: 6px;
+    padding: 5px 15px;
 }
+
 
 .colorBar{
     height: 35px;
