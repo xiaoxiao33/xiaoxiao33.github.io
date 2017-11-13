@@ -28,52 +28,78 @@
     
     
     <div class="info_section">
-
-        <div class=info_section_header>
-            <div class="colorBar"><div class="title">Your Information</div></div>
-            <button id="use_saved_info">use saved info</button>
-        </div>
+        </form>
         <form action="/action_page.php" method="post">
-            <div>
-                <div class="user_name">First name: <input class="user_name_line" type="text" name="first_name" value=""></div>
-                <div class="user_name">Last name: <input class="user_name_line" type="text" name="last_name" value=""></div>
-            </div>
-            <div>
-                <div class="user_info_line_wrapper">Address Line 1: <input class="user_address_line"type="text" name="address_line_1" value=""></div>
-
-                <div class="user_info_line_wrapper">Address Line 2: <input class="user_address_line" type="text" name="address_line_2" value=""></div>
-
-                <div class="user_info_line_wrapper">
-                    <div class="user_addr_inline">City: <input class="user_city_province_line" type="text" name="city" value=""></div>
-                    <div class="user_addr_inline">State/Province: <input class="user_city_province_line" type="text" name="state" value=""></div>
-                </div>
-                <div class="user_info_line_wrapper">
-                    <div class="user_addr_inline">Country: <input type="text" name="country" value=""></div>
-                    <div class="user_addr_inline">Zip: <input type="text" name="zip" value=""></div>
-                </div>
-            </div>
-
-            <div>
-                <div class="user_info_line_wrapper">
-                    Email: <input class="user_contact_line" type="text" name="email" value="">
-                </div>
-                <div class="user_info_line_wrapper">
-                    Mobile: <input class="user_contact_line" type="text" name="FirstName" value="">
-                </div>
-            </div>
-        
-            <div class="colorBar"><div class="title">Payment Information</div></div>
+            <div class="colorBar"><div class="title">Payment Method</div></div>
             <div class="payment_selection">
                 <div class="user_info_line_wrapper">
-                    Credit Card Number: <input type="text" name="card_number" value="xxxx-xxxx-xxxx-xxxx">
+                    Donation Amount: <br>
+                    <input class="text_input" type="text" name="amount" value="">
                 </div>
                 <div class="user_info_line_wrapper">
-                    Expiration Month: <input type="text" name="card_expiration" value="mm/yy">
+                    Credit Card Number: <br>
+                    <input class="text_input" type="text" name="card_number" value="xxxx-xxxx-xxxx-xxxx">
                 </div>
+                <div class="user_info_line_wrapper">
+                    Expiration Month: <br>
+                    <input class="text_input" type="text" name="card_expiration" value="mm/yy">
+                </div>
+            </div>
+
+            <div class=info_section_header>
+                <div class="colorBar"><div class="title">Billing Address</div></div>
+                <div class="user_info_line_wrapper">
+                    <button id="use_saved_info">use saved info</button>
+                </div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Name: <br>
+                <input class="text_input" type="text" name="name" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Address Line 1: <br>
+                <input class="text_input" type="text" name="address_line_1" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Address Line 2: <br>
+                <input class="text_input" type="text" name="address_line_2" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                City: <br>
+                <input class="text_input" type="text" name="city" value="">
+            </div>
+            <div class="user_info_line_wrapper">
+                State/Province/Region: <br>
+                <input class="text_input" type="text" name="state" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Country: <br> 
+                <input class="text_input" type="text" name="country" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Zip: <br>
+                <input class="text_input" type="text" name="zip" value="">
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Email: <br>
+                <input class="text_input" type="text" name="email" value="">
+            </div>
+            <div class="user_info_line_wrapper">
+                Mobile: <br>
+                <input class="text_input" type="text" name="FirstName" value="">
             </div>
 
             <div class="submit_button">
-              <button type="submit">Continue</button>
+                <a href="thankyou_volunteer.html">
+                    <button type="button">Continue</button>
+                </a>
             </div>
         </form>
     </div>

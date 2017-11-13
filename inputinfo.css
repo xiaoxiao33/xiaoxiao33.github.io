@@ -114,43 +114,30 @@
     margin: 10px 0px;
 }
 
-.user_name{
-    display: inline-block;
-    height: 30px;
-    width: 48%;
-    padding: 0;
-    margin: 0;
-}
-
-.user_name_line{
-    width: 40%;
-}
 .user_info_line_wrapper{
-    height: 30px;
-    width: 100%;
-    padding: 0;
+    height: auto;
+    width: 90%;
+    padding: 0px 25px;
     margin: 0;
 }
 
-.user_address_line{
-    width: 50%;
-}
-
-.user_addr_inline{
-    display: inline-block;
-    height: 30px;
-    width: 48%;
-    padding: 0;
-    margin: 0;
-}
-
-.user_city_province_line{
-    width: 40%;
-}
-
-.user_contact_line{
-    width: 50%;
-}
 .submit_button{
     text-align: center;
+}
+
+.success_info{
+    padding: 0px 25px;
+    font-size: 24pt;
+}
+
+.pull_down_list{
+    width: 95%;
+    min-width: 150px;
+    margin: 5px 0px;
+}
+
+.text_input{
+    width: 95%;
+    min-width: 150px;
+    margin: 5px 0px;
 }
