@@ -1,8 +1,134 @@
 <!DOCTYPE html>
 <html>
+<style>
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #be3948;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
+.rightbtn {
+   float: right;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 <head>
-    <title>Volunteer Program List</title>
+    <title>Donation Program List</title>
     <link rel="stylesheet" type="text/css" href="inputinfo.css"/>
+    <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ -->
+<!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </head>
 <body>
     <div class="wrap">
@@ -19,25 +145,67 @@
             </ul>
         </div>
     </div>
+
+    
     <div class="program">
         <div class="colorBar"><div class="title">Donation Program: Donate with our Volunteers</div></div>
         <img src="children1.jpg" width="250" height="200" align="left">
         <div class="program_Description"> Location: All volunteering locations<br> How do I donate: Contact us with any specific requirements you may have or just click "Donate Now" and we will send you more information! <br><br> Every month we send volunteers to support girl education and pack food for malnutritioned children. In addition to their help, we also take direct donation for those unable to travel far but are willing to help. Volunteer will buy children supplies or help girls pay tuition with your donation. The best part: you know where your money is spent!</div>
-        <div class="donate"><a href="donation_user_info.html" >Donate Now</a></div>
+         <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Donate Now</button></div>
+         <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="donation_user_info.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      </form>
+      <form method="get" action="donation_user_info.html">
+        <button type="submit">Continue as guest</button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+      </form>  
+     
+    </div>
+  
+</div>
+    </div>
+
      <div class="program">
         <div class="colorBar"><div class="title">Donation Program: WildCat Fund</div></div>
         <img src="children2.jpg" width="250" height="200" align="left">
         <div class="program_Description">Location: US and South America<br> How do I donate: Contact us with any specific requirements you may have or just click "Donate Now" and we will send you more information! <br><br> The founders of our organization are a group of Northwestern students. We would like to give support to those college students who are willing to dedicate their time and energy but struggles to go volunterring due to financial issues. We will tell you who your money goes to and how the student makes use of the donation thoroughly so there is no confusion.</div>
-        <div class="donate"><a href="donation_user_info.html">Donate Now</a></div>
+        <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Donate Now</button></div>
     </div>
      <div class="program">
         <div class="colorBar"><div class="title">Donation Program: Keep me Posted!</div></div>
         <img src="children3.jpg" width="250" height="200" align="left">
         <div class="program_Description">Location: Everywhere! <br> How do I donate: Contact us with any specific requirements you may have or just click "Donate Now" and we will send you more information! <br><br> Keep me posted is a program that provides information about donation activities in the neighborhood. It is not limited to monetary donation-- it might be clothes, furnitures, anything. We post information about recent donations in the neighborhood so you can check them out very conveniently once the items you wish to donate matches an event.</div>
-        <div class="donate"><a href="donation_user_info.html">Donate Now</a></div>
+       <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Donate Now</button></div>
     </div>
 </div>
-
 </body>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </html>

@@ -1,5 +1,122 @@
 <!DOCTYPE html>
 <html>
+<style>
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #be3948;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.rightbtn {
+   float: right;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+</style>
 <head>
     <title>Volunteer Program List</title>
     <link rel="stylesheet" type="text/css" href="inputinfo.css"/>
@@ -23,21 +140,61 @@
         <div class="colorBar"><div class="title">Volunteer Program: Help Girls Learn</div></div>
         <img src="donate1.jpg" width="250" height="200" align="left">
         <div class="program_Description"> Available Locations: Sudan, Uganda <br> Duration: Long term<br> Schedule: We organize trips once two months. Each trip lasts for from two weeks several months. <br> <br> Help Girls Learn is a program that supports education for girls in various regions. We invite volunteers to come and teach the girls. Because we do need volunteers to teach the girls, we would like to invite more volunteers who can stay longer. However if you are interested in shorter terms teaching you can join us for the two week trips.</div>
-        <div class="donate"><a href="volunteer_user_info.html">Volunteer Now</a></div>
+        <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Volunteer Now</button></div>
+        <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="volunteer_user_info.html">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      </form>
+      <form method="get" action="volunteer_user_info.html">
+        <button type="submit">Continue as guest</button>
+         <span class="psw">Forgot <a href="#">password?</a></span>
+      </form>  
+     
+    </div>
+  
+</div>
     </div>
      <div class="program">
         <div class="colorBar"><div class="title">Volunteer Program: Feed My Starving Children</div></div>
         <img src="donate2.jpg" width="250" height="200" align="left">
         <div class="program_Description">Available locations: US major cities and South Sudan <br> Duration: Short term <br> Schedule: In the US the schedule varies according to locations. Contact us if you are interested. For volunteering in South Sudan, we organize trips twice each year <br> <br>Program Details: Feed My Starving Children is a program that helps malnutritioned children. We help package food in the US on a regular basis and sends volunteers to South Sudan to get updated information on what the children need. </div>
-        <div class="donate"><a href="volunteer_user_info.html">Volunteer Now</a></div>
+       <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Volunteer Now</button></div>
     </div>
      <div class="program">
         <div class="colorBar"><div class="title">Volunteer Program: We Need Your Help</div></div>
         <img src="volunteer.JPG" width="250" height="200" align="left">
         <div class="program_Description">Available Locations: Chad<br> Duration: Long term<br> Schdule: Irregular<br> <br>Program Details: We Need Your Help invites volunteers who are willing to commit for more than a year. Volunteers get to choose the location they want to volunteer at. You tell us where you want to go, and we will provide you with the list of programs and the necessary trainings.</div>
-        <div class="donate"><a href="volunteer_user_info.html">Volunteer Now</a></div>
+        <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Volunteer Now</button></div>
     </div>
 </div>
 
 </body>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </html>
