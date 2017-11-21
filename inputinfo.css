@@ -1,3 +1,6 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 .wrap{
     width: 1000px;
     margin: 0 auto;
@@ -11,13 +14,13 @@
 }
 
 .title {
-    padding-top: 8px;
-    padding-left: 25px;
+    padding-top: 5px;
+    padding-left: 20px;
     font-weight: normal;
     font-size: 20px;
     color: #FFFFFF;
-    font-family: 'DIN Next Slab W01 Heavy','Georgia',Times,serif;
-
+    /*font-family: 'DIN Next Slab W01 Heavy','Georgia',Times,serif;*/
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav{
@@ -47,7 +50,7 @@
 .nav_right li a{
     display: block;
     font-size: 20px;
-    font-family: Georgia, serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav_right a:link,.nav_right a:visited{
@@ -85,6 +88,7 @@
     height: 80px;
     padding-bottom: 15px;
     font-size: 12pt;
+    margin-left: 23px;
 }
 
 .program_Description {
@@ -100,7 +104,7 @@
     background-color: #ffcccc;
     color: #ffcccc;
     text-decoration: none;
-    font-family: "LinotypeUniversW01-Regu",Arial,Helvetica,sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 15px;
@@ -160,4 +164,9 @@
     width: 95%;
     min-width: 150px;
     margin: 5px 0px;
+}
+
+.err_msg{
+    margin: 5px 0px;
+    color: red;
 }

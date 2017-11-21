@@ -19,6 +19,7 @@ button {
     border: none;
     cursor: pointer;
     font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 button:hover {
@@ -121,14 +122,8 @@ span.psw {
 <head>
     <title>Donation Program List</title>
     <link rel="stylesheet" type="text/css" href="inputinfo.css"/>
-    <!-- Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
- -->
-<!-- Optional theme -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
-
-<!-- Latest compiled and minified JavaScript -->
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    
 </head>
 <body>
     <div class="wrap">
@@ -140,8 +135,8 @@ span.psw {
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">How it works</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Your Account</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="keepInTouch.html">Keep in Touch</a></li>
             </ul>
         </div>
     </div>
@@ -154,7 +149,7 @@ span.psw {
          <div><button class="rightbtn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Donate Now</button></div>
          <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="donation_user_info.html">
+  <form class="modal-content animate" action="donation_user_info_login.html">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
     </div>
@@ -173,7 +168,7 @@ span.psw {
 
     <div class="container" style="background-color:#f1f1f1">
       </form>
-      <form method="get" action="donation_user_info.html">
+      <form method="get" action="donation_user_info_guest.html">
         <button type="submit">Continue as guest</button>
          <span class="psw">Forgot <a href="#">password?</a></span>
       </form>  

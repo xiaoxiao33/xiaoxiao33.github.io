@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<style>
+button {
+    background-color: #be3948;
+    color: white;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+</style>
+<head>
+    <title>Volunteer Personal Info</title>
+    <link rel="stylesheet" type="text/css" href="inputinfo.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+    <div class="nav">
+        <div class="nav_left">
+            <img src="http://moneymag.com.au/wp-content/uploads/2015/12/family-money-charity.jpg" alt="Charity Logo">
+        </div>
+        <div class="nav_right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="keepInTouch.html">Keep in Touch</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header_bar"><div class="title">Volunteer Program Overview</div></div>
+    <div class="program_overview">
+        <div class="program_detail">
+            This is just a fake paragraph of program details.
+        </div>
+    </div>
+
+    <div class="info_section">
+        <form action="/action_page.php" method="post">
+            <div class="colorBar"><div class="title">Schedule And Location</div></div>
+                <div class="schedule_locationselection">
+                    <div class="user_info_line_wrapper">
+                        Schedules: <br>
+                        <select class="pull_down_list" name="scheduleloaction">
+                            <option value="1">January 5-25</option>
+                            <option value="2">February 5-25</option>
+                            <option value="3">March 5-25</option>
+                            <option value="4">April 5-25</option>
+                        </select>
+                    </div>
+                    <div class="user_info_line_wrapper">
+                        Location: <br>
+                        <select class="pull_down_list" name="loaction">
+                            <option value="sudan">Sudan</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="southsudan">South Sudan</option>
+                            <option value="chad">Chad</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class=info_section_header>
+                <div class="colorBar"><div class="title">Your Information</div></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Name: <br>
+                <input class="text_input" id="name" type="text" name="name" value="John Leonard">
+                <div class="err_msg" id="name_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Address Line 1: <br>
+                <input class="text_input" id="addr1" type="text" name="address_line_1" value="2145 Sheridan Road">
+                <div class="err_msg" id="addr1_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Address Line 2: <br>
+                <input class="text_input" id="addr2" type="text" name="address_line_2" value="L361">
+                <div class="err_msg" id="addr2_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                City: <br>
+                <input class="text_input" id="city" type="text" name="city" value="Evanston">
+                <div class="err_msg" id="city_err"></div>
+            </div>
+            <div class="user_info_line_wrapper">
+                State/Province/Region: <br>
+                <input class="text_input" id="state" type="text" name="state" value="Illinois">
+                <div class="err_msg" id="state_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Country: <br> 
+                <input class="text_input" id="country" type="text" name="country" value="United States">
+                <div class="err_msg" id="country_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Zip: <br>
+                <input class="text_input" id="zip" type="text" name="zip" value="60208">
+                <div class="err_msg" id="zip_err"></div>
+            </div>
+
+            <div class="user_info_line_wrapper">
+                Email: <br>
+                <input class="text_input" id="email" type="email" name="email" value="john.leonard@northwestern.edu">
+                <div class="err_msg" id="email_err"></div>
+            </div>
+            <div class="user_info_line_wrapper">
+                Mobile: <br>
+                <input class="text_input" id = "tel" type="tel" name="FirstName" value="2241112223">
+                <div class="err_msg" id="tel_err"></div>
+            </div>
+
+            <div class="submit_button">
+                    <button type="button" onclick="volunteer_form_check()">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>

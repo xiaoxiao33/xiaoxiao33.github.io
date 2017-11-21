@@ -6,8 +6,16 @@
 }
 body{
     background-color: #f5f5f5;
+    font-family: 'Quicksand', sans-serif;
 }
 
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    cursor: pointer;
+}
 .wrap{
     width: 1000px;
     margin: 0 auto;
@@ -39,7 +47,7 @@ body{
 .nav_right li a{
     display: block;
     font-size: 20px;
-    font-family: Georgia, serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav_right a:link,.nav_right a:visited{
@@ -116,7 +124,7 @@ body{
 
 .title a{
     line-height: 35px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: normal;
     color: #FFFFFF;
     padding-left: 20px;
@@ -156,7 +164,7 @@ body{
 }
 .news_content h3 a{
     color: #000000;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -172,8 +180,8 @@ body{
 }
 
 .activity a img{
-    width: 290px;
-    height: 100px;
+    width: 400px;
+    height: 105px;
     margin: 10px 20px 5px 20px;
 }
 
@@ -187,4 +195,48 @@ body{
     font-size: 15px;
     font-weight: bold;
     line-height: 20px;
+}
+
+.about_us{
+    width:98%;
+    height:250px;
+    float: left;
+    padding-top: 30px;
+}
+.about_us a{
+    font-size: 25px;
+}
+.contactus{
+    background-color: yellow;
+}
+
+.nav_right_2 li{
+    list-style-type: none;
+    /*float: left;*/
+    line-height: 80px;
+   /* width: 100px;*/
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.nav_right_2 li a{
+    display: block;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav_right_2 a:link,.nav_right_2 a:visited{
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.nav_right_2 a:hover,.nav_right_2 a:active{
+    color: #FFFFFF;
+    background-color: #be3948;
+}
+.keepintouch {
+    float:right;
+    display:inline-block;
 }
