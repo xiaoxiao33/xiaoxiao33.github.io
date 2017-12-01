@@ -8,7 +8,6 @@ var sec = 1000;
 var click = false;
 
 function init() {
-    console.log("start");
     timer = setInterval(periodic_check, sec/2);
 }
 

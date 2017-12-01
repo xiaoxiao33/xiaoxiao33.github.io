@@ -17,7 +17,7 @@
         <div class="nav_right">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">How it works</a></li>
+                <li><a href="#instruction">How it works</a></li>
                 <li><a href="aboutus.html">About us</a></li>
                 <li><a href="keepInTouch.html">Keep in Touch</a></li>
             </ul>
@@ -25,15 +25,16 @@
     </div>
     <div class="ad" id="picBox">
         <div class="pic">
-            <ul>
-                <li><img src="volunteer2.jpeg"></li>
-                <li><img src="volunteer.jpg"></li>
+            <ul id="piclist">
+                <!-- <li><img src="volunteer2.jpeg"></li>
+                <li><img src="volunteer.jpg"></li> -->
                 <li><img src="give.jpg"></li>
             </ul>
         </div>
     </div>
-  <!--   <div class="colorBar">
-    </div> -->
+    <div id="instruction">
+    	<div class="title"><h2><a href="#" onclick="myFunc2()">Get Started</a></h2></div>
+    </div>
     <div class="participate">
         <ul>
             <li>
@@ -105,5 +106,29 @@
     </div>
 </div>
 </body>
+<script>
+var sec = 3000;
+var num = 1;
 
+function init() {
+    timer = setInterval(myFunc, sec);
+}
+
+function myFunc() {
+    var elem = document.getElementById('piclist');
+    if (num == 1) {
+        elem.innerHTML = '<li><img src="volunteer2.jpeg"></li>';
+        num = 2;
+    } else if (num == 2) {
+         elem.innerHTML = '<li><img src="volunteer.JPG"></li>';
+         num = 3;
+    } else {
+         elem.innerHTML = '<li><img src="give.jpg"></li>';
+         num = 1;
+    }
+}
+
+init();
+
+</script>
 </html>
